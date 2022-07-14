@@ -1,0 +1,167 @@
+/*===== ROOT VARIABLES =====*/
+:root {
+  /* Colors */
+  --hue: 230;
+
+  --brand: hsl(var(--hue), 50%, 73%);
+  --brand-second: hsl(var(--hue), 60%, 90%);
+  --brand-alt: hsl(var(--hue), 50%, 60%);
+  --white: hsl(var(--hue), 60%, 95%);
+
+  /* Font Styles */
+  --main-font: "Montserrat", sans-serif;
+  --alt-font: "Quicksand", sans-serif;
+  --regular: 400;
+  --bold: 700;
+}
+
+/*===== BASE =====*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*===== PAGE STYLE =====*/
+body {
+  background: var(--white);
+  font-family: var(--main-font);
+  height: 100vh;
+}
+
+body main {
+  display: grid;
+  padding: 1rem 0 1rem;
+  height: 100%;
+}
+
+body main div {
+  place-self: center;
+  background: var(--brand-second);
+  display: grid;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  height: max-content;
+  width: min(90%, 25rem);
+}
+
+body main div img {
+  border-radius: 50%;
+  width: min(75%, 13.3rem);
+  justify-self: center;
+  border: 0.15rem solid var(--brand);
+  padding: 0.35rem;
+  margin-bottom: 1.5rem;
+}
+
+body main div h1 {
+  margin-bottom: 2rem;
+  color: var(--brand-alt);
+  font-family: var(--alt-font);
+  font-size: 2rem;
+  font-weight: var(--bold);
+}
+
+body main div ul {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+
+body main div ul li {
+  background: none;
+  border: 0.1rem solid var(--brand-alt);
+  border-radius: 0.25rem;
+  transition: background 0.2s;
+}
+
+body main div ul li:hover {
+  border-color: transparent;
+}
+
+body main div ul li a {
+  padding: 0.75rem 0;
+  text-decoration: none;
+  color: var(--brand-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: var(--regular);
+  font-size: 0.875rem;
+}
+
+body main div ul li:hover a {
+  color: #fff;
+}
+
+body main div ul li a i {
+  font-size: 1.5rem;
+}
+
+/* Scecify Colors on Hover */
+
+/* Github */
+body main div ul li#github:hover {
+  background: #211f1f;
+}
+
+body main div ul li#github:hover a {
+  color: #fff;
+}
+
+/* Instagram */
+body main div ul li#instagram {
+  position: relative;
+  z-index: 1;
+}
+
+body main div ul li#instagram:before {
+  position: absolute;
+  content: "";
+  top: -3.5%;
+  right: -0.5%;
+  bottom: -3.5%;
+  left: -0.5%;
+  background: radial-gradient(
+    circle at 20% 120%,
+    #fdf497 0%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  z-index: -1;
+  transition: opacity 0.2s;
+  opacity: 0;
+  border-radius: 0.25rem;
+}
+
+body main div ul li#instagram:hover {
+  border-color: var(--brand-second);
+}
+
+body main div ul li#instagram:hover:before {
+  opacity: 1;
+}
+
+/* LinkedIn */
+body main div ul li#linkedin:hover {
+  background: #0077b5;
+}
+
+/* Facebook */
+body main div ul li#facebook:hover {
+  background: #3b5998;
+}
+
+/*===== MEDIA QUERIES =====*/
+@media screen and (max-height: 665px) {
+  body {
+    height: 100%;
+  }
+}

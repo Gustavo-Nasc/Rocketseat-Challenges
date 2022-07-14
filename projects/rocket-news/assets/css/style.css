@@ -1,0 +1,279 @@
+/*===== ROOT VARIABLES =====*/
+:root {
+  --body-bg-color: #121214;
+  --title-color: #04d361;
+  --form-color: #a8a8a8;
+  --bg-button-color: #8257e5;
+
+  --font-primary: "League Spartan", sans-serif;
+  --font-secondary: "Work Sans", sans-serif;
+}
+
+/*==== RESET CSS =====*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*===== PAGE STYLE =====*/
+body {
+  background: var(--body-bg-color);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  height: 100%;
+}
+
+#content,
+#background {
+  width: 50%;
+  position: relative;
+  height: 100vh;
+}
+
+#content {
+  background: var(--body-bg-color);
+  padding: 3.125rem 1.875rem;
+  z-index: 1;
+}
+
+#content > img {
+  width: 24.3125rem;
+}
+
+#content-text,
+#content-form,
+#content > a {
+  display: grid;
+  margin: 0 0.5rem;
+}
+
+/* Content Text */
+#content-text {
+  margin-top: 5.75rem;
+  gap: 0.5625rem;
+  margin-bottom: 3.125rem;
+}
+
+#content-text h1 {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  font-family: var(--font-secondary);
+  font-weight: 600;
+}
+
+#content-text strong,
+#content-text p {
+  font-family: var(--font-primary);
+  color: #fff;
+  font-size: 1.05rem;
+}
+
+#content-text strong {
+  font-weight: 600;
+}
+
+#content-text p {
+  line-height: 1.387;
+  font-weight: 300;
+}
+
+/* Content Form */
+#content-form {
+  gap: 1rem;
+  margin-bottom: 3.125rem;
+}
+
+#content-form label {
+  font-family: var(--font-primary);
+  color: var(--form-color);
+  font-size: 1.05rem;
+  font-weight: 600;
+  width: max-content;
+}
+
+#content-form div {
+  display: flex;
+  width: 120%;
+}
+
+#content-form div input {
+  padding: 1rem;
+  border: none;
+  border-left: 5px solid var(--title-color);
+  font-family: var(--font-secondary);
+  width: 100%;
+}
+
+#content-form div button {
+  background: var(--bg-button-color);
+  border: none;
+  padding: 0 0.75rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.3s;
+}
+
+#content-form div button:hover {
+  background: #6b38e0;
+}
+
+#content-form div button i {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+#content-form div button:hover i {
+  transform: rotate(-45deg) translate(0.2rem, 0.1rem);
+}
+
+#content > a {
+  grid-template-columns: auto auto;
+  align-items: center;
+  font-family: var(--font-primary);
+  width: max-content;
+  text-decoration: none;
+  color: var(--bg-button-color);
+  font-size: 1.05rem;
+  gap: 0.25rem;
+  font-weight: 600;
+  transition: transform 0.3s, color 0.3s;
+}
+
+#content > a i {
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+#content > a:hover {
+  transform: translateY(-0.5rem);
+}
+
+#content > a:hover i {
+  transform: rotate(-45deg);
+}
+
+/*===== BACKGROUND =====*/
+#background img {
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+/*===== MODAL WINDOW =====*/
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+  width: min(25rem, 90%);
+  postion: relative;
+  display: grid;
+  gap: 1rem;
+  transform: translateY(-5rem);
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+
+.modal-title {
+  font-size: 2rem;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+}
+
+.modal-text {
+  font-size: 1.05rem;
+  font-family: var(--font-primary);
+  line-height: 1.387;
+  font-weight: 300;
+}
+
+.modal-close {
+  width: max-content;
+  justify-self: end;
+  background: var(--bg-button-color);
+  border: none;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-modal:hover {
+  background: #6b38e0;
+}
+
+/* Active Modal */
+.active-modal {
+  visibility: visible;
+  opacity: 1;
+}
+
+.active-modal .modal-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*===== MEDIA QUERIES =====*/
+
+/* Medium Devices */
+@media screen and (max-width: 1024px) {
+  body {
+    overflow: visible;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  #content,
+  #background {
+    width: 100%;
+    height: max-content;
+  }
+
+  #content-form div {
+    width: 100%;
+  }
+
+  #background img {
+    position: relative;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #content > img {
+    width: 100%;
+  }
+}
+
+/* Small Devices */
+@media screen and (max-width: 490px) {
+  #content {
+    padding: 2.125rem 0.875rem;
+  }
+}

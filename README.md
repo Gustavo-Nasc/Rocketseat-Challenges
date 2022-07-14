@@ -15,5 +15,8 @@
 - [ScrollReveal](https://scrollrevealjs.org)
 - [Unicons](https://iconscout.com/unicons)
 
-## 💻 Projeto
+## 💻 Repositório
 O Discover Challenges é um repositório referente à todos os desafios propostos na plataforma da [Rocketseat](https://www.rocketseat.com.br) no segmento de estudos **Discover**.
+
+## 📄 Página do Projeto
+https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/
