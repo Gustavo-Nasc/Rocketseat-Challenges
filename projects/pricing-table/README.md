@@ -1,4 +1,4 @@
-# Pricing Table - Rocketseat
+# Pricing Table
 
 <div align="center">
     <img src="./.github/preview.png" width="80%" />
@@ -15,10 +15,10 @@
 - [SwiperJS](https://swiperjs.com)
 
 ## 💻 Projeto
-O Rocket News é uma página para captação de leads e newsletter, uma proposta que está nos Desafios do Discover, da Rocketseat.
+O Pricing Table é uma página com uma tabela com as opções de preços/planos do produto/serviço.
 
 ## 📄 Página do Projeto
-https://gustavo-nasc.github.io/Rocket-News/
+https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/projects/pricing-table/pricing-table.html
 
 ## 🔖 Layout
 Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/sSq019RDznSm3eyZoo3OHc/DD-Pricing-Table/duplicate). É necessário ter conta no [Figma](figma.com) para acessá-lo.
