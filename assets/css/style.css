@@ -23,6 +23,7 @@
 body {
     background: var(--bg-color);
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 
 section {
@@ -41,6 +42,7 @@ section {
 #page-title {
     font-size: 1.75rem;
     font-weight: 600;
+    text-align: center;
 }
 
 #page-title a {
