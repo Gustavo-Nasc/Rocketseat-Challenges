@@ -26,7 +26,7 @@ https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/
 ### Portfolio
 <div align="center">
     <a href="https://portfolio-gustavo-nascimento.herokuapp.com" target="_blank">
-        <img src="./assets/image/portfolio.png" width="70%">
+        <img src="./assets/image/portfolio.svg" width="70%">
         <br>
     </a>
     O Portflio é uma página referente à projetos e apresentação pessoal do DEV, implementado de acordo com os conhecimentos do DEV.
@@ -35,7 +35,7 @@ https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/
 ### Social Tree
 <div align="center">
     <a href="https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/projects/social-tree/social-tree.html" target="_blank">
-        <img src="./assets/image/social-tree.png" width="70%">
+        <img src="./assets/image/social-tree.svg" width="70%">
         <br>
     </a>
     O Social Tree ou Rocket Links é uma página referentes à links para as mídias sociais do DEV, onde são inseridas conforme a a quantidade que o mesmo deseja.
@@ -44,7 +44,7 @@ https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/
 ### Pricing Table
 <div align="center">
     <a href="https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/projects/pricing-table/pricing-table.html" target="_blank">
-        <img src="./assets/image/pricing-table.png" width="70%">
+        <img src="./assets/image/pricing-table.svg" width="70%">
         <br>
     </a>
     O Pricing Table é uma página com uma tabela com as opções de preços/planos do produto/serviço.
@@ -53,8 +53,17 @@ https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/
 ### Rocket News
 <div align="center">
     <a href="https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/projects/pricing-table/pricing-table.html" target="_blank">
-        <img src="./assets/image/rocket-news.png" width="70%">
+        <img src="./assets/image/rocket-news.svg" width="70%">
         <br>
     </a>
     O Rocket News é uma página para captação de leads e newsletter.
+</div>
+
+### Sidebar
+<div align="center">
+    <a href="https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/projects/sidebar/sidebar.html" target="_blank">
+        <img src="./assets/image/sidebar.svg" width="70%">
+        <br>
+    </a>
+    A sidebar é uma menu lateral responsivo. Quando o usuário clicar no ícone do menu isso deve fazer com que o estado da sidebar mude entre "aberto" e "fechado".
 </div>

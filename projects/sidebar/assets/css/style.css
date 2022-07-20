@@ -1,0 +1,212 @@
+/*===== ROOT VARIABLES =====*/
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+}
+
+/*===== RESET CSS =====*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*===== PAGE STYLE =====*/
+body {
+    min-height: 100vh;
+    background-color: var(--body-bg-color);
+}
+
+main {
+    display: flex;
+}
+
+/*===== SIDEBAR CLOSED =====*/
+#sidebar {
+    width: 5rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--green);
+    padding: 2rem 0 0;
+    transition: width 0.5s;
+}
+
+#sidebar > div {
+    display: flex;
+    gap: 0.8rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0.8rem;
+    margin: 0 1rem;
+    position: relative;
+}
+
+#sidebar div a {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+}
+
+#sidebar div img {
+    cursor: pointer;
+}
+
+#sidebar div .sidebar-icon {
+    width: 1.5rem;
+}
+
+#sidebar div .sidebar-text {
+    color: var(--text-color);
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#sidebar #sidebar-menu .sidebar-logo {
+    width: 0rem;
+    transition: width 0.3s;
+}
+
+#sidebar #sidebar-menu a {
+    margin-left: -0.75rem;
+}
+
+#sidebar #sidebar-search {
+    background: var(--light-grey);
+    border-radius: 0.75rem;
+    padding: 0.8rem;
+}
+
+#sidebar #sidebar-search input.sidebar-text {
+    font-size: 1rem;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#sidebar #sidebar-search input.sidebar-text::placeholder {
+    color: var(--text-color);
+}
+
+#sidebar #sidebar-exit {
+    background: var(--light-green);
+    width: 100%;
+    margin: auto 0 0;
+}
+
+#sidebar #sidebar-exit > div {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: width 0.3s, opacity 0.3s, visibility 0.3s;
+    position: relative;
+}
+
+#sidebar #sidebar-exit > div .user-image {
+    width: 0;
+    transition: width 0.3s;
+}
+
+#sidebar #sidebar-exit > div div {
+    position: absolute;
+    left: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    width: 10rem;
+}
+
+#sidebar #sidebar-exit > div div .user-name {
+    font-size: 0.9375rem;
+}
+
+#sidebar #sidebar-exit > div div .user-description {
+    font-size: 0.75rem;
+}
+
+#sidebar #sidebar-exit a {
+    margin: 1.25rem 0;
+}
+
+
+/*===== SIDEBAR OPENED =====*/
+#sidebar.sidebar-open {
+    width: 16rem;
+}
+
+#sidebar.sidebar-open #sidebar-menu .sidebar-logo {
+    width: 4rem;
+}
+
+#sidebar.sidebar-open #sidebar-menu a {
+    margin-left: auto;
+}
+
+#sidebar.sidebar-open div .sidebar-text {
+    opacity: 1;
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+
+#sidebar.sidebar-open #sidebar-exit {
+    padding: 0 1rem;
+}
+
+#sidebar.sidebar-open #sidebar-exit > div {
+    width: max-content;
+    opacity: 1;
+    visibility: visible;
+}
+
+#sidebar.sidebar-open #sidebar-exit > div div {
+    width: max-content;
+    opacity: 1;
+    visibility: visible;
+}
+
+#sidebar.sidebar-open #sidebar-exit > div .user-image {
+    width: 2.8125rem;
+    height: 2.8125rem;
+}
+
+#sidebar.sidebar-open #sidebar-exit a {
+    margin-left: auto;
+}
+
+/*===== SECTION =====*/
+section {
+    padding: 1rem;
+}
+
+section strong {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.5625rem;
+}

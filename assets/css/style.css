@@ -112,10 +112,88 @@ section {
     display: flex;
     align-items: center;
     gap: 0.25rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 .project-content .project-link:hover {
     background: var(--brand-dark-2);
+}
+
+/*===== MODAL =====*/
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.25);
+    display: grid;
+    place-items: center;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-content {
+    width: min(80%, 25rem);
+    background: var(--bg-color);
+    padding: 1rem 1.25rem;
+    border-radius: 0.25rem;
+    position: relative;
+}
+
+.modal-title {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.modal-description {
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-link {
+    text-decoration: none;
+    color: #fff;
+    background: var(--brand-dark-1);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.modal-link:hover {
+    background: var(--brand-dark-2);
+}
+
+.modal-link i {
+    font-size: 1.25rem;
+}
+
+.modal-close{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: var(--brand);
+}
+
+/* Active Modal */
+.modal-wrapper.active-modal {
+    visibility: visible;
+    opacity: 1;
 }
 
 @media screen and (max-width: 1300px) {
