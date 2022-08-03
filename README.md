@@ -85,3 +85,12 @@ https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/
     </a>
     O Rocket Shoes é um site de um mini e-commerce de calçados esportivos.
 </div>
+
+### Theme Switcher
+<div align="center">
+    <a href="https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/projects/theme-switcher/theme-switcher.html" target="_blank">
+        <img src="./assets/image/rocket-blog.webp" width="70%">
+        <br>
+    </a>
+    O Theme Switcher é uma página que contém um toggle para alternar entre o tema dark e light.
+</div>

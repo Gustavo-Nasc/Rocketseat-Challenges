@@ -1,0 +1,62 @@
+/*===== RESET =====*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*===== WHITE THEME =====*/
+body {
+    height: 100vh;
+    width: 100vw;
+    background: #f1f1f1;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#theme-switcher {
+    width: 12rem;
+    height: 4.69rem;
+    background: #000;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    font-size: 3.6rem;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    position: relative;
+}
+
+#theme-switcher .uil-sun {
+    color: #F39C12;
+}
+
+#theme-switcher .uil-moon {
+    color: #F1C40F;
+}
+
+#theme-switcher #switcher {
+    content: "";
+    position: absolute;
+    width: 3.6rem;
+    height: 3.6rem;
+    clip-path: circle();
+    background: #fff;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+/*===== DARK THEME =====*/
+body.dark-theme {
+    background: #292C35;
+}
+
+#theme-switcher.switched #switcher {
+    transform: translateX(7.4rem);
+}
