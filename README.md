@@ -1,7 +1,7 @@
 # Discover Challenges - Rocketseat
 
 <div align="center">
-    <img src="./.github/banner.png" width="80%" />
+    <img src="./.github/banner.webp" width="80%" />
 </div>
 
 ## 🚀 Tecnologias dos projetos
@@ -75,4 +75,13 @@ https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/
         <br>
     </a>
     O Rocket Blog é uma SPA, uma homepage para um blog. Blog esse que possui artigos de Tecnologia da Informação.
+</div>
+
+### Rocket Shoes
+<div align="center">
+    <a href="https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/projects/rocket-shoes/rocket-shoes.html" target="_blank">
+        <img src="./assets/image/rocket-blog.webp" width="70%">
+        <br>
+    </a>
+    O Rocket Shoes é um site de um mini e-commerce de calçados esportivos.
 </div>
