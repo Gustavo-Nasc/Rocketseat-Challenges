@@ -1,7 +1,7 @@
 # Discover Challenges - Rocketseat
 
 <div align="center">
-    <img src="./.github/banner.webp" width="80%" />
+    <img src="./.github/preview.png" width="80%" />
 </div>
 
 ## 🚀 Tecnologias dos projetos
