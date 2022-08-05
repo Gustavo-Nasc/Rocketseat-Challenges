@@ -1,0 +1,71 @@
+/*===== ROOT VARIABLES =====*/
+:root {
+  --body-color: #eaeaea;
+  --recipe-color: #fff;
+  --titles-color: #1b1b1b;
+  --legend-color: #8f8f8f;
+  --default-text: #39393a;
+}
+
+/*===== RESET CSS =====*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*===== STYLE PAGE =====*/
+body {
+  background-color: var(--body-color);
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body main {
+  background-color: var(--recipe-color);
+  width: 80%;
+  margin: 3rem auto;
+  padding: 3rem 2rem 1rem;
+  border-radius: 0.5rem;
+}
+
+body main #page-title {
+  text-transform: uppercase;
+}
+
+body main div #img-recipe {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+body main div #legend-recipe {
+  text-align: right;
+  color: var(--legend-color);
+}
+
+/* Titles Margin */
+body main #page-title,
+body main div .content-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--titles-color);
+}
+
+body main div {
+  margin-bottom: 3rem;
+}
+
+body main div .content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+body main div .content-list .content-item {
+  margin-left: 1rem;
+  color: var(--default-text);
+}

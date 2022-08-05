@@ -7,7 +7,7 @@
 ## 🚀 Tecnologias dos projetos
 - HTML
 - CSS
-- JS
+- JavaScript
 
 ## ⚙ Utilitários dos projetos
 - [Google Fonts](https://fonts.google.com)
@@ -80,7 +80,7 @@ https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/
 ### Rocket Shoes
 <div align="center">
     <a href="https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/projects/rocket-shoes/rocket-shoes.html" target="_blank">
-        <img src="./assets/image/rocket-blog.webp" width="70%">
+        <img src="./assets/image/rocket-shoes.webp" width="70%">
         <br>
     </a>
     O Rocket Shoes é um site de um mini e-commerce de calçados esportivos.
@@ -89,8 +89,17 @@ https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/
 ### Theme Switcher
 <div align="center">
     <a href="https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/projects/theme-switcher/theme-switcher.html" target="_blank">
-        <img src="./assets/image/rocket-blog.webp" width="70%">
+        <img src="./assets/image/theme-switcher.webp" width="70%">
         <br>
     </a>
     O Theme Switcher é uma página que contém um toggle para alternar entre o tema dark e light.
+</div>
+
+### Recipe Page
+<div align="center">
+    <a href="https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/projects/recipe-page/recipe-page.html" target="_blank">
+        <img src="./assets/image/recipe-page.webp" width="70%">
+        <br>
+    </a>
+    A Recipe Page é uma página web de uma receita com título, imagem, lista de ingredientes e modo de preparo.
 </div>
