@@ -19,7 +19,7 @@
 O Discover Challenges é um repositório referente à todos os desafios propostos na plataforma da [Rocketseat](https://www.rocketseat.com.br) no segmento de estudos **Discover**.
 
 ## 📄 Página do Projeto
-https://gustavo-nasc.github.io/Rocketseat-Discover-Challenges/
+https://gustavo-nasc.github.io/Rocketseat-Challenges/
 
 ## 📜 Projetos Desenvolvidos
 **Clique nas imagens para abrir cada projeto**
